@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #FAFAF8;
+  --color-bg-alt: #F0EFEA;
+  --color-text: #1A1A18;
+  --color-muted: #6B6A66;
+  --color-border: #E5E4DF;
+
+  --color-impulse: #D85A30;
+  --color-need: #1D9E75;
+  --color-pleasure: #BA7517;
+  --color-gift: #7F77DD;
+  --color-boredom: #888780;
+
+  --font-display: 'General Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
